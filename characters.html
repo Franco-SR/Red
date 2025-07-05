@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>characters</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* typography and colors */
+        :root {
+            --main-color: #FA7C70;
+            --text-color: #C4F0C0;
+            --accent-color: #5F051D;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        body {
+            background-color: var(--main-color);
+            color: var(--text-color);
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .character-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .character-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+        }
+
+        .back-home {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        img {
+            background-color: transparent;
+            filter: drop-shadow(0 0 8px rgba(95, 5, 29, 0.3));
+            transition: transform 0.3s ease;
+            border-radius: 12px;
+            max-width: 100%; /* scale images responsively */
+            height: auto;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .back-home {
+            margin-top: 150px;
+        }
+
+        @media (max-width: 600px) {
+            .character-grid {
+                flex-direction: column;
+                align-items: center;
+                margin-left: 0;
+            }
+            .character-card {
+                width: 80%;
+                margin-bottom: 40px;
+            }
+            .character-card img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+            .character-card{
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>Here's some cool characters, with red as theme</h1>
+
+    <div class="character-grid">
+
+        <div class="character-card">
+            <p>Kai</p>
+            <img src="photolib/characters/kai.png" alt="image of Kai" width="340" height="300">
+        </div>
+
+        <div class="character-card">
+            <p>Po</p>
+            <img src="photolib/characters/po.png" alt="image of Po" width="250" height="500">
+        </div>
+
+        <div class="character-card">
+            <p>Hellboy</p>
+            <img src="photolib/characters/hellboy.jpg" alt="Image of Hellboy" width="190" height="300">
+        </div>
+
+        <div class="character-card">
+            <p>Red Ranger</p>
+            <img src="photolib/characters/red-ranger.png" alt="image of Red Ranger" width="170" height="300">
+        </div>
+
+    </div>
+
+    <div class="back-home">
+        <a href="index.html">Back Home</a>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Red</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+
+    <style>
+        :root {
+            --main-color: #FA7C70;
+            --text-color: #C4F0C0;
+            --accent-color: #5F051D;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'Roboto Condensed', sans-serif;
+            background-color: var(--main-color);
+            color: var(--text-color);
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            background-color: var(--accent-color);
+            color: var(--main-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .intro-wrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 100px 20px 60px;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .intro-text {
+            flex: 1;
+            text-align: left;
+            padding-right: 80px;
+            color: var(--text-color);
+            font-size: 1rem;
+            min-width: 260px;
+        }
+
+        .intro-gif {
+            max-width: 200px;
+            height: auto;
+            flex-shrink: 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(95, 5, 29, 0.5);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2, h3, h4 {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+
+        h4 {
+            font-style: italic;
+            font-size: 25px;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .color-grid {
+            text-align: center;
+            margin: 10px;
+        }
+
+        img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            border-radius: 15%;
+            box-shadow: 0 4px 8px rgba(95, 5, 29, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .link-to-char {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 480px) {
+            .intro-text {
+                text-align: center;
+            }
+
+            .intro-wrapper {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .image-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1, h2, h3, h4 {
+                font-size: 1.2rem;
+            }
+
+            h4 {
+                margin-top: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Red, It's the Best color!</h1>
+</div>
+
+<div class="intro-wrapper">
+    <p class="intro-text">
+        Red is one of the primary colors that the human eye has evolved to be able see.
+        The color red is as core to our understanding of the world as our sense of smell.
+        Humans have long connected and related colours to aspects of their environments.
+        They used it to express emotions, observe the climate, describe violence—color has found its way into language in all kinds of ways.
+        Red of all the colors evokes the most emotions: passion, love, anger—and to me that’s what makes it the best color.
+    </p>
+    <img src="photolib/GIF/intro-red.gif" alt="Color scale" class="intro-gif" />
+</div>
+
+<div class="container">
+
+    <h2>Let us list some examples</h2>
+
+    <div class="image-row">
+        <div class="color-grid">
+            <p>Cadmium</p>
+            <img src="photolib/colors/cadmium.png" alt="cadmium color sample" />
+        </div>
+        <div class="color-grid">
+            <p>Pink</p>
+            <img src="photolib/colors/pink.png" alt="Pink color sample" />
+        </div>
+        <div class="color-grid">
+            <p>Carmine</p>
+            <img src="photolib/colors/carmine.png" alt="Carmine color sample" />
+        </div>
+    </div>
+
+    <h3>HERE ARE SOME COOL RED CHARACTERS</h3>
+
+    <div class="link-to-char">
+        <a href="characters.html">Cool Character</a>
+    </div>
+
+    <h4>Why isn't it your favourite colour!?</h4>
+
+    <div style="height: 1000px;"></div>
+
+</div>
+
+</body>
+</html>
